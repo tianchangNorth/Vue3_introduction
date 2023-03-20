@@ -1,16 +1,23 @@
 <template>
-  <Demo msg='你好啊' school="atguigu"></Demo>
+  <div class="app">
+    <h2>我是APP组件</h2>
+    <Child></Child>
+  </div>
 </template>
 
 <script>
-import Demo from './components/Demo.vue'
+import Child from "./components/Child.vue";
 export default {
   name: "App",
-  components:{
-    Demo
-  }
+  components: {
+    Child,
+  },
 };
 </script>
 
-<style>
+<style scoped>
+.app {
+  background-color: blueviolet;
+  padding: 10px;
+}
 </style>
